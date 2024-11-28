@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank BRI Application Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .form-section { margin-bottom: 20px; }
+        .form-section h2 { background-color: #444; color: white; padding: 5px; }
+        .form-group { display: flex; align-items: center; margin-bottom: 10px; }
+        .form-group label { width: 200px; }
+        .form-group input, .form-group select { flex: 1; padding: 5px; }
+        .form-checkbox, .form-radio { display: inline-flex; align-items: center; margin-right: 10px; }
+        .form-checkbox input, .form-radio input { margin-right: 5px; }
+        .section-row { display: flex; }
+        .section-row .form-group { flex: 1; }
+    </style>
+</head>
+<body>
+
+<h1>Formulir Aplikasi Rekening Perorangan (AR-01)</h1>
+
+<div class="form-section">
+    <h2>Data Pribadi</h2>
+    <div class="form-group">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama_lengkap" required>
+    </div>
+    <div class="form-group">
+        <label>Nama Ibu Kandung:</label>
+        <input type="text" name="nama_ibu_kandung" required>
+    </div>
+    <div class="section-row">
+        <div class="form-group">
+            <label>Tempat Lahir:</label>
+            <input type="text" name="tempat_lahir" required>
+        </div>
+        <div class="form-group">
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Jenis Kelamin:</label>
+        <div class="form-radio"><input type="radio" name="jenis_kelamin" value="Pria" required> Pria</div>
+        <div class="form-radio"><input type="radio" name="jenis_kelamin" value="Wanita"> Wanita</div>
+    </div>
+    <div class="form-group">
+        <label>Kewarganegaraan:</label>
+        <select name="kewarganegaraan" required>
+            <option value="WNI">WNI</option>
+            <option value="WNA">WNA</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>No. Identitas:</label>
+        <input type="text" name="no_identitas" required>
+    </div>
+    <div class="form-group">
+        <label>Pendidikan Terakhir:</label>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="SD"> SD</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="SMP"> SMP</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="SMA"> SMA</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="D1"> D1</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="D2"> D2</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="D3"> D3</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="S1"> S1</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="S2"> S2</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="S3"> S3</div>
+            <div class="form-checkbox"><input type="checkbox" name="pendidikan_terakhir" value="Lainnya"> Lainnya</div>
+    </div>
+            
+    <div class="form-group">
+        <label>Agama:</label>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Islam"> Islam</div>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Kristen"> Kristen</div>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Katolik"> Katolik</div>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Hindu"> Hindu</div>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Buddha"> Buddha</div>
+            <div class="form-checkbox"><input type="checkbox" name="Agama" value="Lainnya"> Lainnya</div>
+           
+    </div>
+    <div class="form-group">
+        <label>Status Pernikahan:</label>
+        <div class="form-radio"><input type="radio" name="status_pernikahan" value="Belum Menikah" required> Belum Menikah</div>
+        <div class="form-radio"><input type="radio" name="status_pernikahan" value="Menikah"> Menikah</div>
+        <div class="form-radio"><input type="radio" name="status_pernikahan" value="Janda/Duda"> Janda/Duda</div>
+    </div>
+    <div class="form-group">
+        <label>Alamat Domisili:</label>
+        <input type="text" name="alamat_domisili" required>
+    </div>
+</div>
+
+<div class="form-section">
+    <h2>Data Pekerjaan</h2>
+    <div class="form-group">
+        <label>Jenis Pekerjaan:</label>
+        <select name="jenis_pekerjaan" required>
+            <option value="PNS">PNS</option>
+            <option value="TNI/Polri">TNI/Polri</option>
+            <option value="Pegawai Swasta">Pegawai Swasta</option>
+            <option value="Wiraswasta">Wiraswasta</option>
+            <option value="Pelajar">Pelajar</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Nama Kantor/Tempat Bekerja:</label>
+        <input type="text" name="nama_kantor">
+    </div>
+    <div class="form-group">
+        <label>Bidang Pekerjaan:</label>
+        <input type="text" name="bidang_pekerjaan">
+    </div>
+    <div class="form-group">
+        <label>Alamat Kantor/Tempat Bekerja:</label>
+        <input type="text" name="alamat_kantor">
+    </div>
+</div>
+
+<div class="form-section">
+    <h2>Data Keuangan</h2>
+    <div class="form-group">
+        <label>Pendapatan per Bulan:</label>
+        <select name="pendapatan_bulanan" required>
+            <option value="di bawah 5 juta">di bawah 5 juta</option>
+            <option value="5-10 juta">5-10 juta</option>
+            <option value="10-50 juta">10-50 juta</option>
+            <option value="50-100 juta">50-100 juta</option>
+            <option value="di atas 100 juta">di atas 100 juta</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Sumber Penghasilan:</label>
+        <div class="form-checkbox"><input type="checkbox" name="sumber_penghasilan" value="Gaji"> Gaji</div>
+        <div class="form-checkbox"><input type="checkbox" name="sumber_penghasilan" value="Usaha"> Usaha</div>
+        <div class="form-checkbox"><input type="checkbox" name="sumber_penghasilan" value="Investasi"> Investasi</div>
+        <div class="form-checkbox"><input type="checkbox" name="sumber_penghasilan" value="Lainnya"> Lainnya</div>
+    </div>
+    <div class="form-group">
+        <label>Referensi:</label>
+        <input type="text" name="referensi">
+    </div>
+</div>
+
+<button type="submit">Submit</button>
+
+</body>
+</html>
