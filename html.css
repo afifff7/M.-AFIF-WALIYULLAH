@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Header */
+.header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero h2 {
+  font-size: 3rem;
+}
+.hero span {
+  color: #ffd700;
+}
+.hero .btn {
+  background: #fff;
+  color: #2980b9;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero .btn:hover {
+  background: #ffd700;
+  color: #fff;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 0;
+  text-align: center;
+}
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 3rem 0;
+  background: #f7f7f7;
+}
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.portfolio .card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+}
+.portfolio .card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.portfolio .card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 0;
+  text-align: center;
+}
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button {
+  background: #2980b9;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #ffd700;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
